@@ -25,9 +25,97 @@
   padding: 0;
 }
 
+span {
+  padding: 10px 0px;
+}
+
 /* ----- hovers for navbar, bottom menu, and all 4 media symbols when hovers over the div containing them  ----- */
 .navbar:hover, #botmenu a:hover, #media:hover>a {
   color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+/* ----- hover visability for each color change from span ----- */
+#films:hover a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+#techno:hover a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+#careers:hover a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+#extras:hover a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+#about:hover a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+/* ----- hover visability for each dropdown is here ----- */
+#films:hover~#dropdownfilms {
+  transition: color 170ms ease-in-out;
+  display: block;
+  visibility: visible;
+}
+
+#techno:hover~#dropdowntechno {
+  transition: color 170ms ease-in-out;
+  display: block;
+  visibility: visible;
+}
+
+#careers:hover~#dropdowncareers {
+  transition: color 170ms ease-in-out;
+  display: block;
+  visibility: visible;
+}
+
+#extras:hover~#dropdownextras {
+  transition: color 170ms ease-in-out;
+  display: block;
+  visibility: visible;
+}
+
+#about:hover~#dropdownabout {
+  transition: color 170ms ease-in-out;
+  display: block;
+  visibility: visible;
+}
+
+/* ----- keep each dropdown shows as long as hovering ----- */
+#dropdownfilms:hover {
+  visibility: visible;
+}
+
+#dropdowntechno:hover {
+  visibility: visible;
+}
+
+#dropdowncareers:hover {
+  visibility: visible;
+}
+
+#dropdownextras:hover {
+  visibility: visible;
+}
+
+#dropdownabout:hover {
+  visibility: visible;
+}
+
+/* ----- hovering over dropdown menu ----- */
+.navbardrop:hover {
+  color: rgba(255, 255, 255, .4);
   transition: color 170ms ease-in-out;
 }
 
@@ -60,8 +148,49 @@ nav {
 /* ----- container inside the nav bar ----- */
 nav #nav {
   display: flex;
+  position: relative;
   margin-top: -4px;
   padding: 1px 24px;
+}
+
+/* ----- dropdown menus props ----- */
+.drops {
+  position: absolute;
+  top: 39px;
+  padding: 20px;
+  background: #1d1d1d;
+  font-family: brandon-grotesque1;
+  letter-spacing: .14em;
+  font-size: 15px;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+#dropdownfilms {
+  left: 187px;
+}
+
+#dropdowntechno {
+  left: 332px;
+}
+
+#dropdowncareers {
+  left: 480px;
+}
+
+#dropdownextras {
+  left: 590px;
+}
+
+#dropdownabout {
+  left: 682px;
+  width: 28%;
+}
+
+/* ----- all dropdown bars props ----- */
+.navbardrop {
+  color: white;
+  text-decoration: none;
 }
 
 /* ----- all navbar elements ----- */
