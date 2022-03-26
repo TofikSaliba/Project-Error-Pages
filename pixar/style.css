@@ -1,0 +1,166 @@
+/* ----- 4 fonts are used in this page ----- */
+@font-face {
+  font-family: brandon-grotesque1;
+  src: url(font/Brandon_med.otf);
+}
+
+@font-face {
+  font-family: brandon-grotesque2;
+  src: url(font/Brandon_blk.otf);
+}
+
+@font-face {
+  font-family: brandon-grotesque3;
+  src: url(font/brandon-grotesque-light-58a8a4b38001d.otf);
+}
+
+@font-face {
+  font-family: futura-pt;
+  src: url(font/futura-light-bt.ttf);
+}
+
+/* ----- reset ----- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- hovers for navbar, bottom menu, and all 4 media symbols when hovers over the div containing them  ----- */
+.navbar:hover, #botmenu a:hover, #media:hover>a {
+  color: rgba(29, 29, 29, .4);
+  transition: color 170ms ease-in-out;
+}
+
+/* ----- hover over each media symbol to turn back to original color ----- */
+.media:hover {
+  color: #1d1d1d;
+  transition: color 170ms ease-in-out;
+}
+
+/* ----- header has logo and navbar ----- */
+header {
+  display: flex;
+  padding: 33px 118px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----- logo img ----- */
+#logo a {
+  display: block;
+  padding: 1px 24px;
+}
+
+/* ----- nav bar ----- */
+nav {
+  margin: 0 -13.95px;
+  padding-right: 48px;
+}
+
+/* ----- container inside the nav bar ----- */
+nav #nav {
+  display: flex;
+  margin-top: -4px;
+  padding: 1px 24px;
+}
+
+/* ----- all navbar elements ----- */
+.navbar {
+  color: #1d1d1d;
+  text-decoration: none;
+  font-family: brandon-grotesque1;
+  font-size: 15px;
+  margin: 0 13.95px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transition: color 170ms ease-in-out;
+}
+
+/* ----- contains crying img and awww.. and paragraph ----- */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 76px 142px;
+}
+
+#cryimg img {
+  width: 516.719px;
+  height: 697.922px;
+}
+
+/* ----- awww... dont cry text ----- */
+#dontcry {
+  font-family: brandon-grotesque2;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  font-size: 34px;
+  margin-top: 179px;
+  margin-left: 14px;
+}
+
+/* ----- its just a 404 error ----- */
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: futura-pt;
+  font-size: 20px;
+  line-height: 40px;
+  color: rgba(29, 29, 29, .7);
+}
+
+/* ----- media section ----- */
+#mediacontainer {
+  text-align: center;
+  padding-top: 38px;
+  padding-left: 6px;
+}
+
+/* ----- media div container ----- */
+#media {
+  margin: auto auto;
+  width: 241px;
+  height: 37px;
+  font-size: 22px;
+  font-family: futura-pt;
+  letter-spacing: 5px;
+}
+
+/* ----- media links on symbols ----- */
+#media a {
+  color: #1d1d1d;
+}
+
+/* ----- bottom menu ----- */
+#botmenu {
+  text-align: center;
+  margin-top: 55px;
+}
+
+/* ----- bottom menu links elements text ----- */
+#botmenu a {
+  font-family: brandon-grotesque3;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .29em;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  color: #1d1d1d;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(29, 29, 29, .3);
+  display: inline-block;
+}
+
+/* copyright */
+#copyr {
+  text-align: center;
+  font-family: brandon-grotesque3;
+  font-weight: 600;
+  color: #1d1d1d;
+  letter-spacing: .29em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 91px;
+}
