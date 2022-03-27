@@ -36,80 +36,20 @@ span {
 }
 
 /* ----- hover visability for each color change from span ----- */
-#films:hover a {
-  color: rgba(29, 29, 29, .4);
-  transition: color 170ms ease-in-out;
-}
-
-#techno:hover a {
-  color: rgba(29, 29, 29, .4);
-  transition: color 170ms ease-in-out;
-}
-
-#careers:hover a {
-  color: rgba(29, 29, 29, .4);
-  transition: color 170ms ease-in-out;
-}
-
-#extras:hover a {
-  color: rgba(29, 29, 29, .4);
-  transition: color 170ms ease-in-out;
-}
-
-#about:hover a {
+#films:hover a, #techno:hover a, #careers:hover a, #extras:hover a, #about:hover a {
   color: rgba(29, 29, 29, .4);
   transition: color 170ms ease-in-out;
 }
 
 /* ----- hover visability for each dropdown is here ----- */
-#films:hover~#dropdownfilms {
-  transition: color 170ms ease-in-out;
-  display: block;
-  visibility: visible;
-}
-
-#techno:hover~#dropdowntechno {
-  transition: color 170ms ease-in-out;
-  display: block;
-  visibility: visible;
-}
-
-#careers:hover~#dropdowncareers {
-  transition: color 170ms ease-in-out;
-  display: block;
-  visibility: visible;
-}
-
-#extras:hover~#dropdownextras {
-  transition: color 170ms ease-in-out;
-  display: block;
-  visibility: visible;
-}
-
-#about:hover~#dropdownabout {
+#films:hover~#dropdownfilms, #techno:hover~#dropdowntechno, #careers:hover~#dropdowncareers, #extras:hover~#dropdownextras, #about:hover~#dropdownabout {
   transition: color 170ms ease-in-out;
   display: block;
   visibility: visible;
 }
 
 /* ----- keep each dropdown shows as long as hovering ----- */
-#dropdownfilms:hover {
-  visibility: visible;
-}
-
-#dropdowntechno:hover {
-  visibility: visible;
-}
-
-#dropdowncareers:hover {
-  visibility: visible;
-}
-
-#dropdownextras:hover {
-  visibility: visible;
-}
-
-#dropdownabout:hover {
+#dropdownfilms:hover, #dropdowntechno:hover, #dropdowncareers:hover, #dropdownextras:hover, #dropdownabout:hover {
   visibility: visible;
 }
 
